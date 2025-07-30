@@ -6,7 +6,7 @@ const decimalToBinary = (input) => {
 
 };
 
-function checkUserInput() {
+const checkUserInput = () => {
   if (
     !numberInput.value ||
     isNaN(parseInt(numberInput.value)) ||
@@ -17,8 +17,9 @@ function checkUserInput() {
   }
 
   decimalToBinary(parseInt(numberInput.value));
-}
-
+  decimalToBinary(parseInt(numberInput.value));
+  numberInput.value = "";
+};
 
 convertBtn.addEventListener("click", checkUserInput);
 
