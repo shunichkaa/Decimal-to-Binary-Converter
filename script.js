@@ -3,11 +3,11 @@ const convertBtn = document.getElementById("convert-btn");
 const result = document.getElementById("result");
 
 const checkUserInput = () => {
-  if (numberInput.value === "") {
+if (!numberInput.value) {
+}
 
-  }
+  console.log(numberInput.value);
 };
-
 
 convertBtn.addEventListener("click", checkUserInput);
 
