@@ -1,9 +1,13 @@
-function b() {
-  return "is awesome!";
+const a = () => {
+  return "freeCodeCamp " + b();
+};
+
+function c() {
+  return "awesome!";
 }
 
-function a() {
-  return "freeCodeCamp " + b();
+function b() {
+  return "is " + c();
 }
 
 const numberInput = document.getElementById("number-input");
