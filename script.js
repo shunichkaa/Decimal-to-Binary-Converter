@@ -5,12 +5,14 @@ const result = document.getElementById("result");
 const countdown = (number) => {
   console.log(number);
 
-if (number === 0) {
+  if (number === 0) {
     return;
   } else {
     countdown(number - 1);
   }
 };
+
+countdown(3)
 
 const decimalToBinary = (input) => {
   let binary = "";
