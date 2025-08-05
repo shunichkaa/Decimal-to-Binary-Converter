@@ -6,10 +6,10 @@ const countdown = (number) => {
   console.log(number);
 
 if (number === 0) {
-  return;
-} else {
-
-}
+    return;
+  } else {
+    countdown(number - 1);
+  }
 };
 
 const decimalToBinary = (input) => {
