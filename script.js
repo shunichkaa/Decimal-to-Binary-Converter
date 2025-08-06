@@ -2,13 +2,15 @@ const numberInput = document.getElementById("number-input");
 const convertBtn = document.getElementById("convert-btn");
 const result = document.getElementById("result");
 
-function decimalToBinary(input) {
+const decimalToBinary = (input) => {
   if (input === 0) {
     return "0";
-  } else {
+  } 
+  
+  else {
     return decimalToBinary(Math.floor(input / 2)) + (input % 2);
   }
-}
+};
 
 const checkUserInput = () => {
   if (
