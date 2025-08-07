@@ -15,6 +15,8 @@ const showAnimation = () => {
 };
 
 const checkUserInput = () => {
+ const inputInt = parseInt(numberInput.value);
+
   if (
     !numberInput.value ||
     isNaN(parseInt(numberInput.value)) ||
@@ -25,7 +27,7 @@ const checkUserInput = () => {
   }
 
   if (parseInt(numberInput.value) === 5) {
-  showAnimation();
+    showAnimation();
     return;
   }
 
