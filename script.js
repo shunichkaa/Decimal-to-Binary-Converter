@@ -26,6 +26,8 @@ const decimalToBinary = (input) => {
 };
 
 const showAnimation = () => {
+const result = document.getElementById('result');
+result.innerText = 'Call Stack Animation';
 };
 
 const checkUserInput = () => {
