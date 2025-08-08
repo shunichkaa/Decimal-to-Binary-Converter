@@ -28,11 +28,11 @@ const decimalToBinary = (input) => {
 const showAnimation = () => {
   result.innerText = "Call Stack Animation";
 
-  animationData.forEach((obj) => {
-    setTimeout(() => {    animationContainer.innerHTML += `<p id=""></p>`;
-    }, obj.addElDelay);
-  });
-};
+ animationData.forEach(function(obj) {
+  setTimeout(function() {
+    animationContainer.innerHTML += `<p id="${obj.inputVal}"></p>`;
+  }, obj.addElDelay);
+});
 
 const checkUserInput = () => {
   const inputInt = parseInt(numberInput.value);
