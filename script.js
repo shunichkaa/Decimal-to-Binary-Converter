@@ -5,17 +5,18 @@ const animationContainer = document.getElementById("animation-container");
 const animationData = [
   {
     inputVal: 5,
-
     addElDelay: 1000
   },
   {
     inputVal: 2,
     addElDelay: 1500
   },
-  {
-    inputVal: 1,
-    addElDelay: 2000
-  }
+{
+  inputVal: 1,
+  addElDelay: 2000,
+  msg: ""
+}
+
 ];
 
 const decimalToBinary = (input) => {
@@ -31,7 +32,10 @@ const showAnimation = () => {
 
   animationData.forEach((obj) => {
     setTimeout(() => {
-     animationContainer.innerHTML += `<p id="${obj.inputVal}" class="animation-frame"></p>`;
+      animationContainer.innerHTML += `
+        <p id="${obj.inputVal}" class="animation-frame">
+          decimalToBinary(${obj.inputVal})
+        </p>
       `;
     }, obj.addElDelay);
   });
